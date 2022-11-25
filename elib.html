@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Department of Electronic Engineering E-Library</title>
+    <link rel="stylesheet" href="elibstyle.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT Sans">
+
+</head>
+<body>
+   <div class="bgImg">
+    <h2>
+        ECE E-Library
+    </h2>
+   </div>
+   <div class="main">
+    <h3>Welcome to the Department of Electronic Engineering (ECE) E-Library Catalouge</h3>
+    <h3>What Do You Want to Access?
+    </h3>
+    </div>
+    
+    <div class="access">
+        <div class="one dropdown">
+            <a onclick="myFunction()" class="dropbtn" title="click to open">Course Material</a>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="#">100 Level</a>
+                <a href="#">200 Level</a>
+                <a href="#">300 Level</a>
+                <a href="#">400 Level</a>
+                <a href="#">500 Level</a>
+                <a href="#">Postgraduate</a>
+              </div>
+        </div>
+        <div class="one previous">
+           <a href="#">Previous Projects</a>
+        </div>
+    </div>
+
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+        </script>
+</body>
+</html>

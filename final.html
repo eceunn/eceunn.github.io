@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>University of Nigeria E-Learning Website</title>
+        <style>
+            /* Add the styles here */
+            html,body {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            .main {
+                height: 500px;
+            }
+            .beInline, .me, .anotherOne, .last {
+                display: inline-block;
+                height: 100px;
+                width: 200px;
+                background-color: black;
+                color: white;
+                margin: 3%;
+                margin-right: 20%;
+                margin-top: 2%;
+                text-align: center;
+                position: relative;
+            }
+            .beInline::after {
+                content: " ";
+                display: block;
+                position: absolute;
+                height: 2px;
+                width: 320px;
+                top: 50%;
+                left: 200px;
+                background-color: black;
+            }
+            .me {
+                margin-right: 0;
+            }
+            .anotherOne {
+                margin-left: 28%;
+                margin-top: 0%;
+                position: relative;
+                top: -90px;
+                width: 2px;
+                height: 150px;
+            }
+            .second {
+                margin-left: 17%;
+            }
+            .last {
+                margin-top: 0;
+                position: relative;
+                top: -131px;
+                margin-left: 21%;
+            }
+            .two {
+                margin-left: 2.5%;
+            }
+            .link {
+                box-sizing: border-box;
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+                padding-top: 19%;
+                font-size: 18px;
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+            .link:visited {
+                color: blue;
+            }
+            .link:hover {
+                background-color: green;
+                color: white;
+            }
+           
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <div class="beInline"><a href="firstyear.html" class="link">100 Level</a></div>
+            <div class="beInline"><a href="#" class="link">200 Level</a></div>
+            <div class="me"><a href="#" class="link">300 Level</a></div>
+
+            <div class="contain">
+                <div class="anotherOne">&nbsp;</div>
+                <div class="anotherOne second">&nbsp;</div>
+            </div>
+
+            <div class="contain2">
+                <div class="last"><a href="#" class="link">400 Level</a></div>
+                <div class="last two"><a href="#" class="link">500 Level</a></div>
+            </div>
+        </div>
+    </body>
+</html>
