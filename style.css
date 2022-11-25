@@ -1,0 +1,334 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+.head {
+    position: relative;
+    height: 150px;
+}
+.head img {
+    display: inline-block;
+    border-radius: 5px;
+    margin-top: 22px;
+    margin-left: 20px;
+    z-index: 1;
+}
+.head h3 {
+    z-index: -1;
+    text-align: center;
+    font-family: "Oswald";
+    font-weight: 800;
+    font-size: 30px;
+    position: relative;
+    top: -130px;
+}
+
+.navigation {
+    display: flex;
+    background-color: #003e29;
+    box-sizing: border-box;
+}
+
+.navigation a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+a.right {
+    margin-left: 100px;
+}
+
+.navigation a:hover {
+    border-bottom: 3px solid grey;
+}
+
+.main {
+    display: flex;
+    height: 500px;
+    background: url(college_students.jpg) no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+.main h3 {
+    text-align: center;
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    font-weight: bolder;
+}
+.icons {
+    display: flex;
+}
+.icons div {
+    width: 23%;
+    margin: auto;
+}
+.icons div img {
+    height: 150px;
+    width: 150px;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+}
+.icons div p {
+  text-align: center;
+  font-weight: bolder;
+  font-family: "Avenir LT W01 85 Heavy";
+}
+.exploreCourse {
+    font-family: "Avenir LT W01 85 Heavy";
+    color: #98002b;
+    font-size: 24px;
+    letter-spacing: 2px;
+    line-height: 1.2;
+    text-align: center;
+}
+.programs {
+    display: flex;
+    justify-content: space-around;
+}
+.programs>div {
+    width: 28%;
+    /*background-color: green;*/
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.undergraduate {
+    box-shadow: 1px 1px lightgrey;
+    transition: transform 1s;
+    transition-timing-function: ease-in-out;
+}
+.undergraduate img {
+    width: 100%;
+    height: 250px;
+    display: block;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: 5px solid maroon;
+}
+.undergraduate h4 {
+    font-family: "Avenir LT W01 85 Heavy";
+    color: #270a3f;
+    margin-left: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 1.2;
+}
+.undergraduate p {
+    width: 70%;
+    margin-left: 20px;
+    line-height: 1.4;
+    font-family: 'Avenir LT Std 35 Light';
+    font-size: 17px;
+}
+.button a {
+    border-color: #d21c5a;
+    display: block;
+    width: 50%;
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-family: "Avenir LT W01 65 Medium";
+    letter-spacing: 1px;
+    text-align: center;
+    color: #fff;
+    background: #98002E;
+    padding: 10px 10px;
+    margin-left: 20px;
+    text-decoration: none;
+    border-radius: 20px;
+    border-width: 1px;
+    border-style: solid;
+}
+.undergraduate:hover {
+    box-shadow: 3px 3px 12px lightgray;
+    transform: translateY(-10px);
+}
+.button a:hover {
+    background-color: white;
+    color: #98002E;
+}
+
+.masters {
+    box-shadow: 1px 1px lightgrey;
+    transition: transform 1s;
+    transition-timing-function: ease-in-out;
+}
+.masters img {
+    width: 100%;
+    height: 250px;
+    display: block;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: 5px solid darkgreen;
+}
+.masters div a {
+    background-color: darkgreen;
+    border-color: darkgreen;
+}
+.masters h4 {
+    font-family: "Avenir LT W01 85 Heavy";
+    color: #270a3f;
+    margin-left: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 1.2;
+}
+.masters p {
+    width: 70%;
+    margin-left: 20px;
+    line-height: 1.4;
+    font-family: 'Avenir LT Std 35 Light';
+    font-size: 17px;
+}
+.masters:hover {
+    box-shadow: 3px 3px 12px lightgray;
+    transform: translateY(-10px);
+}
+.masters div a:hover {
+    background-color: white;
+    color: darkgreen;
+    border-color: darkgreen;
+}
+
+.phd {
+    box-shadow: 1px 1px lightgrey;
+    transition: transform 1s;
+    transition-timing-function: ease-in-out;
+}
+.phd img {
+    width: 100%;
+    height: 250px;
+    display: block;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: 5px solid purple;
+}
+.phd div a {
+    background-color: purple;
+    border-color: purple;
+}
+.phd h4 {
+    font-family: "Avenir LT W01 85 Heavy";
+    color: #270a3f;
+    margin-left: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 1.2;
+}
+.phd p {
+    width: 70%;
+    margin-left: 20px;
+    line-height: 1.4;
+    font-family: 'Avenir LT Std 35 Light';
+    font-size: 17px;
+}
+.phd:hover {
+    box-shadow: 3px 3px 12px lightgray;
+    transform: translateY(-10px);
+}
+.phd div a:hover {
+    background-color: white;
+    color: purple;
+    border-color: purple;
+}
+.news {
+    font-family: "Avenir LT W01 85 Heavy";
+    color: #98002b;
+    font-size: 34px;
+    letter-spacing: 2px;
+    line-height: 1.2;
+    text-align: center;
+}
+.importantNews {
+    height: 500px;
+    background-color:  #63666A;
+    display: flex;
+    overflow: hidden;
+}
+.importantNews div {
+    width: 30%;
+    margin: auto;
+    height: 450px;
+}
+.news1, .news2, .news3 {
+    position: relative;
+}
+.importantNews div img {
+    width: 100%;
+    height: 220px;
+    opacity: 0.4;
+}
+.importantNews div .title {
+    position: absolute;
+    top: 90px;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    font-size: 30px;
+    text-shadow: 2px 2px 5px grey;
+    color: black;
+    font-family: "Avenir LT W01 85 Heavy";
+    font-style: italic;
+}
+.importantNews div .description {
+    font-family: "Avenir LT W01 85 Heavy";
+    margin-left: 10px;
+    font-size: 23px;
+    font-weight: bolder;
+}
+.importantNews div a {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 18px;
+    color: white;
+    font-weight: bolder;
+}
+.footer1 {
+    display: flex;
+    height: 300px;
+    background-color: #003e29;
+}
+.flexAm {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.row1 {
+    width: 30%;
+    margin: auto;
+    height: 250px;
+    color: white;
+    text-align: center;
+}
+.row1 p {
+    font-family: 'Avenir LT Std 35 Light';
+    text-align: center;
+    font-size: 18px;
+    font-weight: bolder;
+    line-height: 1.5;
+}
+.row1 ul {
+    list-style-type: none;
+    font-size: 18px;
+    font-weight: bolder;
+    margin-top: 12%;
+}
+.row1 ul li {
+    margin-bottom: 16px;
+    line-height: 1.2;
+}
+.footer2 {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #bebab3;
+    color: #003e29;
+    font-size: 18px;
+}
