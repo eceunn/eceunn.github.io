@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>University of Nigeria E-Learning Website</title>
         <style>
             /* Add the styles here */
@@ -12,73 +14,84 @@
 
             .head {
     position: relative;
-    height: 100px;
+    height: 150px;
     display: flex;
+    margin-bottom: 2%;
+    border-bottom: 1px solid grey;
 }
 .head img {
     display: block;
     border-radius: 5px;
-    margin-top: 22px;
+    margin-top: 2%;
     margin-left: 20px;
 }
 .head h3 {
-    background-color: blue;
+    box-sizing: border-box;
     text-align: center;
     font-family: "Oswald";
     font-weight: 500;
-    font-size: 20px;
-    position: relative;
-    top: -130px;
+    font-size: 1.5em;
+    background-color: white;
+    width: 100%;
+    margin: auto;
+    padding: 2.5%;
+    height: 150px;
 }
 
             .main {
-                height: 500px;
+                margin-top: 7%;
+                margin-bottom: 1%;
+                
             }
-            .beInline, .me, .anotherOne, .last {
+            .contain1 {
+                width: 90%;
+                margin: auto;
+                margin-bottom: 4%;
+            }
+            
+            .beInline, .last, .project {
                 display: inline-block;
                 height: 100px;
                 width: 200px;
                 background-color: black;
                 color: white;
-                margin: 3%;
-                margin-right: 20%;
-                margin-top: 2%;
+               
+                margin-right: 15%;
                 text-align: center;
-                position: relative;
             }
-            .beInline::after {
-                content: " ";
-                display: block;
-                position: absolute;
-                height: 2px;
-                width: 320px;
-                top: 50%;
-                left: 200px;
-                background-color: black;
-            }
-            .me {
-                margin-right: 0;
-            }
-            .anotherOne {
-                margin-left: 28%;
-                margin-top: 0%;
-                position: relative;
-                top: -90px;
-                width: 2px;
-                height: 150px;
-            }
-            .second {
-                margin-left: 17%;
+            
+            .contain2 {
+                width: 90%;
+                margin: auto;
+                margin-bottom: 4%;
             }
             .last {
-                margin-top: 0;
-                position: relative;
-                top: -131px;
-                margin-left: 21%;
+                margin-left: 20%;
+                margin-right: 0;
             }
-            .two {
-                margin-left: 2.5%;
+            .C {
+                margin-right: 0;
             }
+            .project {
+                margin-left: 27%;
+            }
+            .contain3 {
+                width: 50%;
+                margin: auto;
+            }
+            @media only screen and (max-width: 970px) {
+                .beInline, .last, .project {
+                    display: block;
+                    margin-right: 0;
+                    margin-left: 0;
+                    margin-top: 2%;
+                }
+                .contain3, .contain2, .contain1 {
+                    width: 90%;
+                    margin: auto;
+                }
+            }
+
             .link {
                 box-sizing: border-box;
                 display: inline-block;
@@ -88,6 +101,7 @@
                 font-size: 18px;
                 font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             }
+            
             .link:visited {
                 color: blue;
             }
@@ -100,37 +114,30 @@
 
             .footer1 {
                 display: flex;
-                height: 200px;
+                height: 250px;
                 background-color: #003e29;
-}
-.flexAm {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+                overflow: auto;
 }
 .row1 {
     width: 30%;
     margin: auto;
-    height: 250px;
     color: white;
     text-align: center;
 }
 .row1 p {
     font-family: 'Avenir LT Std 35 Light';
-    text-align: center;
-    font-size: 18px;
+    font-size: 1.2em;
     font-weight: bolder;
     line-height: 1.5;
 }
 .row1 ul {
     list-style-type: none;
-    font-size: 18px;
+    font-size: 1.2em;
     font-weight: bolder;
-    margin-top: 12%;
+    margin-top: 8%;
 }
 .row1 ul li {
     margin-bottom: 16px;
-    line-height: 1.2;
 }
 .footer2 {
     text-align: center;
@@ -145,35 +152,39 @@
     </head>
     <body>
 
+      
         <header class="head">
-            <img src="unnlogo.jpg" alt="University of Nigeria Nsukka" width="70px" height="70px" title="University of Nigeria, Nsukka.">
-            <h3 class="headInline">Department of Electronic Engineering<br>
-            E-Learning Platform
-        </h3>
+            <img src="unnlogo.jpeg" alt="University of Nigeria Nsukka" width="70px" height="70px" title="University of Nigeria, Nsukka.">
+            <h3 class="headInline">Department of <span style="color:#003e29;"></span><b>Electronic Engineering</b></span><br>
+            E-Learning Platform </h3>
         </header>
-
+       
+        
         <div class="main">
-            <div class="beInline"><a href="firstyear.html" class="link">100 Level</a></div>
-            <div class="beInline"><a href="#" class="link">200 Level</a></div>
-            <div class="me"><a href="#" class="link">300 Level</a></div>
 
-            <div class="contain">
-                <div class="anotherOne">&nbsp;</div>
-                <div class="anotherOne second">&nbsp;</div>
+            <div class="contain1">
+            <div class="beInline A"><a href="firstyear.html" class="link">100 Level</a></div>
+            <div class="beInline"><a href="secondyear.html" class="link">200 Level</a></div>
+            <div class="beInline C"><a href="thirdyear.html" class="link">300 Level</a></div>
             </div>
 
             <div class="contain2">
-                <div class="last"><a href="#" class="link">400 Level</a></div>
-                <div class="last two"><a href="#" class="link">500 Level</a></div>
+                <div class="last"><a href="fourthyear.html" class="link">400 Level</a></div>
+                <div class="last two"><a href="finalyear.html" class="link">500 Level</a></div>
+            </div>
+
+            <div class="contain3">
+                <div class="project"><a href="#" class="link">Project Materials</a></div>
             </div>
         </div>
-
+       
+      
         <div class="footer1">
             <div class="row1 flexAm">
                 <p>
                 <u>Address</u> <br>
                 Department of Electronic Engineering,<br> Faculty Of Engineering, UNN. <br> Opposite ICT Innovation Centre<br>
-                Open: Monday to Friday, 7am to 4pm<br><br>
+                Open: Monday to Friday, 7am to 4pm<br>
                 Email: electronic.engineering@unn.edu.ng
                 </p>
             </div>
@@ -198,5 +209,6 @@
         <div class="footer2">
             &copy; 2022, Department of Electronic Engineering, UNN.
         </div>
+      
     </body>
 </html>

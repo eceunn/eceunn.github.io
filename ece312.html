@@ -5,21 +5,67 @@
         <title>ECE 312 Course Outline</title>
         <style>
             html, body {
-                margin: 0;
-                padding: 0;
-            }
-            .myList {
-                background-color: grey;
-                display: inline-block;
-            }
-            ol li {
-                padding: 25px;
-                font-size: 18px;
-                border-bottom: 2px solid black;
-            }
-        </style>
+                 margin: 0;
+                 padding: 0;
+             }
+             .head {
+   position: relative;
+   height: 150px;
+   display: flex;
+   margin-bottom: 2%;
+   border-bottom: 1px solid grey;
+ }
+ .head img {
+   display: block;
+   border-radius: 5px;
+   margin-top: 2%;
+   margin-left: 20px;
+ }
+ .head h3 {
+   box-sizing: border-box;
+   text-align: center;
+   font-family: "Oswald";
+   font-weight: 500;
+   font-size: 1.5em;
+   background-color: white;
+   width: 100%;
+   margin: auto;
+   padding: 2.5%;
+   height: 150px;
+ }
+             .myList {
+                 display: inline-block;
+             }
+             ol li {
+                 padding: 25px;
+                 font-size: 18px;
+                 border-bottom: 1px solid black;
+             }
+             h2 {
+             font-size: 25px;
+             font-family: Merriweather;
+             text-align: center;
+             margin-top: 1%;
+             margin-bottom: -10px;
+         }
+ 
+             .footer2 {
+     text-align: center;
+     padding-top: 20px;
+     padding-bottom: 20px;
+     background-color: #bebab3;
+     color: #003e29;
+     font-size: 18px;
+ }
+         </style>
     </head>
     <body>
+        <header class="head">
+            <img src="unnlogo.jpeg" alt="University of Nigeria Nsukka" width="70px" height="70px" title="University of Nigeria, Nsukka.">
+            <h3 class="headInline">Department of <span style="color:#003e29;"></span><b>Electronic Engineering</b></span><br>
+            E-Learning Platform </h3>
+        </header>
+
         <h2>ECE 312 Course Outline</h2>
         <ol class="myList">
             <li>Two port networks: Parametric representation of passive and active two port networks</li>
@@ -28,5 +74,9 @@
             <li>Network synthesis</li>
             <li>Foster and Cauer’s methods of synthesis</li>
         </ol>
+
+        <div class="footer2">
+            &copy; 2022, Department of Electronic Engineering, UNN.
+        </div>
     </body>
 </html>

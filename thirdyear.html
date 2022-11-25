@@ -3,24 +3,75 @@
 <head>
     <title>Third Year Courses</title>
     <style>
-        th,td {
-            border-bottom: 1px solid #ddd;
-        }
-        table {
-            border-collapse: collapse;
-            width: 70%;
-        }
-        th,td {
-            padding: 10px;
-            text-align: center;
-        }
-        h2 {
-            text-align: center;
-        }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
+
+.head {
+  position: relative;
+  height: 150px;
+  display: flex;
+  margin-bottom: 2%;
+  border-bottom: 1px solid grey;
+}
+.head img {
+  display: block;
+  border-radius: 5px;
+  margin-top: 2%;
+  margin-left: 20px;
+}
+.head h3 {
+  box-sizing: border-box;
+  text-align: center;
+  font-family: "Oswald";
+  font-weight: 500;
+  font-size: 1.5em;
+  background-color: white;
+  width: 100%;
+  margin: auto;
+  padding: 2.5%;
+  height: 150px;
+}
+
+      th,td {
+          border-bottom: 1px solid #ddd;
+      }
+      table {
+          border-collapse: collapse;
+          width: 70%;
+          margin: auto;
+      }
+      th,td {
+          padding: 10px;
+          text-align: center;
+      }
+      h2 {
+          font-size: 25px;
+          font-family: Merriweather;
+          text-align: center;
+      }
+      .footer2 {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #bebab3;
+  color: #003e29;
+  font-size: 18px;
+}
+  </style>
     </style>
 </head>
 <body>
-<h2>First Semester Courses</h2>
+
+  <header class="head">
+    <img src="unnlogo.jpeg" alt="University of Nigeria Nsukka" width="70px" height="70px" title="University of Nigeria, Nsukka.">
+    <h3 class="headInline">Department of <span style="color:#003e29;"></span><b>Electronic Engineering</b></span><br>
+    E-Learning Platform </h3>
+</header>
+
+<h2><u>First Semester</u></h2>
 
 <table>
     <tr>
@@ -49,31 +100,31 @@
       </tr>
       <tr>
         <td>4</td>
-        <td>ECE 321</td>
+        <td><a href="ece321.html">ECE 321</a></td>
         <td>Physical Electronics</td>
         <td>3</td>
       </tr>
       <tr>
         <td>5</td>
-        <td>ECE 381</td>
+        <td><a href="ece381.html">ECE 381</a></td>
         <td>Physical Electronics Laboratory</td>
         <td>1</td>
       </tr>
       <tr>
         <td>6</td>
-        <td>ECE 311</td>
+        <td><a href="ece311.html">ECE 311</a></td>
         <td>Circuit Theory I</td>
         <td>3</td>
       </tr>
       <tr>
         <td>7</td>
-        <td>ECE 331</td>
+        <td><a href="ece331.html">ECE 331</a></td>
         <td>Electromagnetic Fields and Waves I</td>
         <td>3</td>
       </tr>
       <tr>
         <td>8</td>
-        <td>ECE 361</td>
+        <td><a href="ece361.html">ECE 361</a></td>
         <td>Electronic Measurements</td>
         <td>3</td>
       </tr>
@@ -85,7 +136,7 @@
       </tr>
       <tr>
         <td>10</td>
-        <td>ECE 371</td>
+        <td><a href="ece371.html">ECE 371</a></td>
         <td>System Programming</td>
         <td>2</td>
       </tr>
@@ -97,7 +148,7 @@
       </tr>
   </table>
 
-  <h2>Second Semester Courses</h2>
+  <h2><u>Second Semester</u></h2>
 
   <table>
     <tr>
@@ -114,31 +165,31 @@
     </tr>
     <tr>
         <td>2</td>
-        <td>ECE 312</td>
+        <td><a href="ece312.html">ECE 312</a></td>
         <td>Circuit Theory II</td>
         <td>3</td>
       </tr>
       <tr>
         <td>3</td>
-        <td>ECE 322</td>
+        <td><a href="ece322.html">ECE 322</a></td>
         <td>Applied Electronics I</td>
         <td>2</td>
       </tr>
       <tr>
         <td>4</td>
-        <td>ECE 332</td>
+        <td><a href="ece332.html">ECE 332</a></td>
         <td>Electromagnetic Fields & Waves II</td>
         <td>3</td>
       </tr>
       <tr>
         <td>5</td>
-        <td>ECE 382</td>
+        <td><a href="ece382.html">ECE 382</a></td>
         <td>Applied Electronics Laboratory</td>
         <td>1</td>
       </tr>
       <tr>
         <td>6</td>
-        <td>ECE 384</td>
+        <td><a href="ece384.html">ECE 384</a></td>
         <td>Measurements and Instrumentation Lab.</td>
         <td>1</td>
       </tr>
@@ -156,7 +207,7 @@
       </tr>
       <tr>
         <td>9</td>
-        <td>ENG 301</td>
+        <td><a href="eng302.html">ENG 301</a></td>
         <td>Engineering Analysis</td>
         <td>4</td>
       </tr>
@@ -167,6 +218,10 @@
         <td>22</td>
       </tr>
   </table>
+
+  <div class="footer2">
+    &copy; 2022, Department of Electronic Engineering, UNN.
+</div>
   </body>
 
 </html>
